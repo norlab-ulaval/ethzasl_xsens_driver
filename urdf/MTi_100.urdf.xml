@@ -1,0 +1,11 @@
+<robot name="mti_100" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="world"/>
+
+  <joint name="world_to_imu_fixed" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="world"/>
+    <child link="imu"/>
+  </joint>
+
+  <link name="imu"/>
+</robot>
